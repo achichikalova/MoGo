@@ -77,16 +77,16 @@ $(function () {
     });
 
     /* Reviews Slider */
-    $('#data_slider').slick({
+
+    $('.reviews_slider').slick({
         infinity: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 6000,
+        autoplaySpeed: 4000,
+
+
     });
-
-
-
 
 });

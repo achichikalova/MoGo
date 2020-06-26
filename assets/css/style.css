@@ -16,6 +16,10 @@ body {
     box-sizing: border-box;
 }
 
+/* * {
+    border: 1px solid #f00 !important;
+} */
+
 h1,
 h2,
 h3,
@@ -262,7 +266,10 @@ button:hover {
 /* Section */
 .section {
     padding: 80px 0;
+}
 
+.section_services {
+    padding-bottom: 0;
 }
 
 .section_gray {
@@ -505,6 +512,7 @@ button:hover {
     bottom: -90px;
     right: -80px;
     z-index: 1;
+    overflow: hidden;
 }
 
 /* We Do */
@@ -591,49 +599,6 @@ button:hover {
     font-weight: 300;
     display: none;
 
-}
-
-/* Reviews */
-.reviews_item {
-    margin: 0 110px;
-}
-
-.reviews_image {
-    display: inline-block;
-    width: 24%;
-    height: auto;
-    padding: 0 30px 30px 0;
-}
-
-.reviews_content {
-    margin-top: 45px;
-    display: inline-block;
-    width: 70%;
-
-}
-
-.reviews_text {
-    font-size: 18px;
-    font-weight: 300;
-    font-style: italic;
-    color: #999;
-}
-
-.reviews_author {
-    margin-top: 15px;
-    color: #333;
-    font-size: 24px;
-    font-family: 'Kaushan Script', cursive;
-}
-
-.reviews_author::before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
-    width: 60px;
-    height: 3px;
-    background-color: #f38181;
 }
 
 /* Social */
@@ -770,6 +735,67 @@ button:hover {
     font-size: 15px;
     font-style: italic;
     font-weight: 300;
+}
+
+
+/* Reviews */
+.reviews_slider {
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+
+.reviews_item {
+    margin: 0 15px;
+}
+
+.rewiews_avatar {
+    width: 170px;
+    float: left;
+}
+
+.rewiews_avatar {
+    width: 23.333%;
+    height: auto;
+    display: block;
+    padding: 0 30px 30px 0;
+}
+
+.rewiews_avatar img {
+    width: 130px;
+    height: 130px;
+}
+
+.reviews_content {
+    width: 76.66%;
+    height: 170px;
+    float: left;
+    margin-top: 30px;
+
+}
+
+.reviews_text {
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    color: #999;
+}
+
+.reviews_author {
+    margin-top: 15px;
+    color: #333;
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.reviews_author::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
 }
 
 /* Clients */
@@ -1208,6 +1234,15 @@ button:hover {
         font-size: 80px;
     }
 
+    /* Section */
+    .section {
+        padding: 40px 0;
+    }
+
+    .section.section_gray {
+        margin-bottom: 40px;
+    }
+
     /* Statictics */
     .stat {
         flex: none;
@@ -1246,20 +1281,23 @@ button:hover {
         border-bottom: 0;
     }
 
-
-    /* Reviews */
-    .reviews_item {
-        margin: 0 auto;
+    /* Card */
+    .card {
+        margin: 50px 0;
+        justify-content: center;
     }
 
-    .reviews_image {
-        width: 20%;
-        height: 20%;
+    .card_item {
+        width: 100%;
+        max-width: 410px;
+        margin-bottom: 30px;
+        padding: 0 15px;
     }
 
-    .reviews_text {
-        font-size: 15px;
+    .card_item:last-child {
+        margin-bottom: 0;
     }
+
 
     /* Footer */
     .column_first {
@@ -1330,26 +1368,10 @@ button:hover {
         margin: 6px 0;
     }
 
-    /* Section */
-    .section {
-        padding: 40px 0;
-    }
-
-    /* Card */
-    .card {
-        margin: 50px 0;
-        justify-content: center;
-    }
-
-    .card_item {
+    /* Reviews Slider */
+    .reviews_item {
         width: 100%;
-        max-width: 410px;
-        margin-bottom: 30px;
-        padding: 0 15px;
-    }
-
-    .card_item:last-child {
-        margin-bottom: 0;
+        height: auto;
     }
 
 
@@ -1364,19 +1386,19 @@ button:hover {
     }
 
     /* Reviews */
-    .reviews_item {
-        display: flex;
-        justify-content: center;
-    }
-
     .reviews_image {
         display: block;
         padding: 0 15px 15px 0;
     }
 
     .reviews_content {
-        margin-top: 15px;
+        margin-top: 5px;
     }
+
+    .reviews_text {
+        font-size: 15px;
+    }
+
 
     /* Works */
     .works {
@@ -1500,24 +1522,23 @@ button:hover {
     }
 
     /* Reviews */
-    .reviews_item {
-        display: block;
-        text-align: center;
-    }
+    /* Reviews */
 
     .reviews_image {
-        padding: 0;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 40%;
+        padding: 0 15px 15px 0;
     }
 
     .reviews_content {
+        margin-top: 5px;
         width: 100%;
+        height: auto;
     }
 
 
+    .reviews_author {
+        font-size: 13px;
+    }
 
     /* Clients */
     .clients_item {
