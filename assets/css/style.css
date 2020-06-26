@@ -227,6 +227,11 @@ button:hover {
 
 }
 
+button:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
 /*****Slider*****/
 .slider {
     width: 100%;
@@ -749,6 +754,12 @@ button:hover {
     margin: 0 15px;
 }
 
+.reviews_item:focus {
+    outline: none !important;
+    box-shadow: none;
+
+}
+
 .rewiews_avatar {
     width: 170px;
     float: left;
@@ -966,6 +977,7 @@ button:hover {
 /* Map */
 .map {
     text-align: center;
+    padding-top: 30px;
     padding-bottom: 0;
 }
 
@@ -1236,7 +1248,7 @@ button:hover {
 
     /* Section */
     .section {
-        padding: 40px 0;
+        padding: 0 0 40px 0;
     }
 
     .section.section_gray {
@@ -1325,10 +1337,10 @@ button:hover {
     }
 
     /* Header */
-    .header {
-        padding: 10px 0;
+    /*  .header {
+        padding: 10px;
     }
-
+ */
 
     /* Navigation */
     .nav {
@@ -1367,6 +1379,7 @@ button:hover {
         background-color: #fff;
         margin: 6px 0;
     }
+
 
     /* Reviews Slider */
     .reviews_item {
