@@ -716,7 +716,7 @@ button:hover {
 }
 
 .works_item:hover .works_overlay {
-    opacity: 1;
+    opacity: .9;
 
 }
 

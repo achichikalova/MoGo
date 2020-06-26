@@ -1,19 +1,3 @@
-/* var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-    });
-} */
-
-
 $(function () {
 
     var header = $("#header"),
@@ -46,9 +30,9 @@ $(function () {
         var $this = $(this),
             elementId = $(this).data('scroll'),
             elementOffset = $(elementId).offset().top;
-        /* 
-                $("#nav a").removeClass("active");
-                $this.addClass("active"); */
+
+        $(".burger").addClass("active");
+        $this.removeClass("active");
 
         $("html, body").animate({
             scrollTop: elementOffset
@@ -68,16 +52,32 @@ $(function () {
     });
 
     /* Accordion */
-    $("[data-collapse]").on("click", function (event) {
+    /* $("[data-collapse]").on("click", function (event) {
         event.preventDefault();
         var $this = $(this),
             elementId = $(this).data('collapse');
 
         $(elementId).slideToggle();
-    });
+
+        $(".accordion_content#wedo").addClass("active");
+        $this.removeClass("active");
+    }); */
+    var acc = document.getElementsByClassName("accordion_item");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = $(".accordion_content");
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
 
     /* Reviews Slider */
-
     $('.reviews_slider').slick({
         infinity: true,
         slidesToShow: 1,
