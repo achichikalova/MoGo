@@ -78,7 +78,7 @@ $(function () {
     }
 
     /* Reviews Slider */
-    $('.reviews_slider').slick({
+/*    $('.reviews_slider').slick({
         infinity: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -87,6 +87,6 @@ $(function () {
         autoplaySpeed: 4000,
 
 
-    });
+    });*/
 
 });
